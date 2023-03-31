@@ -1,10 +1,11 @@
 <?php
 include('class/Play.php');
 include('class/Game.php');
+include('class/Move.php');
 
-$play1 = new Play('P','S');
-$play2 = new Play('R','R');
-$play3 = new Play('R','P');
+$play1 = new Play(Move::Rock,Move::Scissors);
+$play2 = new Play(Move::Paper,Move::Rock);
+$play3 = new Play(Move::Paper,Move::Paper);
 
 $plays = array($play1,$play2,$play3);
 
